@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -13,8 +13,8 @@ import ColorPages from './Pages/ColorPages';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes basename="/">
+    <HashRouter basename="/">
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -26,7 +26,7 @@ function App() {
           <Route path="/ColorPages" element={<ColorPages />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
