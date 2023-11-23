@@ -14,7 +14,7 @@ import ColorPages from './Pages/ColorPages';
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes basename="/">
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/About" element={<About />} />
