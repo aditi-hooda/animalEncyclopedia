@@ -1,0 +1,89 @@
+.home-slider-container {
+    background-image: url('../assets/bgCarousel.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.home-slider-container .swiper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-wrapper {
+    padding-bottom: 3rem;
+}
+
+.swiper-slide {
+    opacity: 0.8;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    padding: 20px;
+}
+
+.side img {
+    height: 300px;
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.funFacts {
+    background-image: url('../assets/FunFactsBg.png');
+    border: 9px solid #04521f;
+    padding: 31px;
+}
+
+.funFacts .Title {
+    color: #fc0;
+    font-size: 24px !important;
+    font-family: GeoBrandBold, CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.funFacts .Content {
+    color: #fff;
+    font-family: GeoBrandBold, CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+    font-size: 24px !important;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.funFacts .section-img img {
+    width: 500px;
+    border-radius: 59%;
+    border: 2px solid white;
+}
+
+.mainTitle {
+    font-family: GeoEditBold, Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Map {
+    mix-blend-mode: multiply;
+}
+
+.text-to-speach img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}

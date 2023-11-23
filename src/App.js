@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './Layout/Layout';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import AnimalBehavior from './Pages/AnimalBehavior';
+import Diet from './Pages/Diet';
+import Mating from './Pages/Mating';
+import Lifestyle from './Pages/Lifestyle';
+import FunFacts from './Pages/FunFacts';
+import ColorPages from './Pages/ColorPages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="AnimalBehavior" element={<AnimalBehavior />} />
+          <Route path="/Diet" element={<Diet />} />
+          <Route path="/Mating" element={<Mating />} />
+          <Route path="/Lifestyle" element={<Lifestyle />} />
+          <Route path="/FunFacts" element={<FunFacts />} />
+          <Route path="/ColorPages" element={<ColorPages />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
